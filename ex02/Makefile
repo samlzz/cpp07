@@ -2,7 +2,7 @@
 #* >> USER CONFIGURATION (MANDATORY)
 # =============================================================================
 
-NAME      ?= cpp07
+NAME      ?= ex02
 ifeq ($(NAME),)
     $(error NAME is empty: please define executable name)
 endif
@@ -13,7 +13,7 @@ OBJ_DIR   = build/
 BIN_DIR   =
 
 ### UFILES_START ###
-FILES     ?= 
+FILES =	main.cpp
 ### END ###
 ifeq ($(FILES),)
     $(error FILES is empty: please define source files)
