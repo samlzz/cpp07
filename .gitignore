@@ -1,6 +1,8 @@
 **/**.swp
 .vscode/*
 
+**/.cache
+
 **/ign_*
 
 build/*
