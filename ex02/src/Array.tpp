@@ -6,7 +6,7 @@
 /*   By: sliziard <sliziard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 20:26:33 by sliziard          #+#    #+#             */
-/*   Updated: 2025/10/24 21:25:03 by sliziard         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:57:32 by sliziard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define ARRAY_TPP
 
 # ifndef ARRAY_HPP
-#  error __FILE__ "sould only be included from Array.hpp"
+#  error __FILE__ " sould only be included from Array.hpp"
 #  include "Array.hpp"
 # endif
 
