@@ -6,7 +6,7 @@
 /*   By: sliziard <sliziard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 20:26:31 by sliziard          #+#    #+#             */
-/*   Updated: 2025/10/24 21:25:10 by sliziard         ###   ########.fr       */
+/*   Updated: 2026/02/05 10:22:40 by sliziard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define ARRAY_HPP
 
 # include <stdint.h>
-
-# define PRINT_CALLER
 
 template <typename T>
 class Array {

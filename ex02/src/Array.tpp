@@ -6,7 +6,7 @@
 /*   By: sliziard <sliziard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 20:26:33 by sliziard          #+#    #+#             */
-/*   Updated: 2025/10/26 20:57:32 by sliziard         ###   ########.fr       */
+/*   Updated: 2026/02/05 10:21:17 by sliziard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # ifndef ARRAY_HPP
 #  error __FILE__ " sould only be included from Array.hpp"
-#  include "Array.hpp"
+#  include "Array.hpp" // ? for LSP purpose
 # endif
 
 # include <stdexcept>
@@ -51,14 +51,17 @@ Array<T>& 		Array<T>::operator=(const Array& other)
 	if (this != &other)
 	{
 		T *newData = other._size ? new T[other._size] : NULL;
-		try
+		if (newData)
 		{
-			for (uint32_t i = 0; i < other._size; i++)
-				newData[i] = other._data[i];
-		} catch (...)
-		{
-			delete[] newData;
-			throw;
+			try
+			{
+				for (uint32_t i = 0; i < other._size; i++)
+					newData[i] = other._data[i];
+			} catch (...)
+			{
+				delete[] newData;
+				throw;
+			}
 		}
 		delete[] _data;
 		_data = newData;
