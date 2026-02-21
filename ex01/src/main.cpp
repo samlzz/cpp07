@@ -6,7 +6,7 @@
 /*   By: sliziard <sliziard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:18:04 by sliziard          #+#    #+#             */
-/*   Updated: 2025/10/24 20:15:49 by sliziard         ###   ########.fr       */
+/*   Updated: 2026/02/21 20:22:52 by sliziard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int main()
 	iter(b, 3, print<const int>); std::cout << "\n";
 
 	float f[] = { 2.2, 3.3, 42.20 };
-	iter(f, 3, print<const float>);
+	iter(f, 3, print<const float>); std::cout << "\n";
 
 	std::string s[] = {"hi","there"};
 	iter(s, 2, shout);
